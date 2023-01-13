@@ -1,5 +1,8 @@
+
 import java.awt.*;
 import javax.swing.JFrame;
+
+import screens.OpeningScreen;
 
 public class Game extends JFrame {
 
@@ -39,9 +42,7 @@ public class Game extends JFrame {
         
   public static void main( String[] args ) {
     Game app = new Game();
-    app.setTitle( "A Simple Game" );
-    app.setVisible( true );
+    new OpeningScreen();
     app.run();
-    System.exit( 0 );
   }
 }
